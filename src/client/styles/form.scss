@@ -1,12 +1,72 @@
-form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+@import './variables.scss';
+
+#errorMsg {
+    display: none;
+    transition: all 0.3s ease;
+    color: $link_color;
+    text-transform: uppercase;
+    font-family: $font_custom_1;
+    margin-top: 10px;
 }
 
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
+form {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 40px;
+    color: #fff;
+
+    textarea {
+        width: 100%;
+        margin-top: 15px;
+        padding: 15px;
+        border: 1px solid #fff;
+
+        &:focus {
+            border: 1px solid $custom_color_1;
+            outline: none;
+        }
+    }
+
+    label {
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-family: $font_custom_1;
+    }
+
+    input {
+        padding: 15px 20px;
+        width: 100%;
+        line-height: 16px;
+        margin: 10px 0;
+        background-color: $custom_color_1;
+        border: none;
+        color: #fff;
+        font-family: $font_custom_1;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    ::-webkit-input-placeholder { /* Edge */
+        font-family: $font_custom_2;
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-family: $font_custom_2;
+      }
+
+      ::placeholder {
+        font-family: $font_custom_2;
+      }
+}
+
+@media screen and (max-width: 991px) {
+    .form_container {
+        margin: 50px 5%;
+    }
+
+    form {
+        padding: 25px;
+    }
 }

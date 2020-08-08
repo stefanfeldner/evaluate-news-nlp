@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+.results {
+    border: 1px solid #fff;
+    padding: 30px;
+    color: #fff;
+
+    #results_entry {
+        display: none;
+        transition: all 0.3s ease;
+        margin-top: 15px;
+
+        #subjectivity,
+        #irony {
+            color: $link_color;
+            font-family: $font_custom_2;
+            text-transform: lowercase;
+        }
+    }
+}
+
+.visible {
+    display: block !important;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 991px) {
+    .results {
+        margin-top: 30px;
+    }
+}

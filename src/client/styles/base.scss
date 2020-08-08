@@ -1,7 +1,13 @@
+@import './variables.scss';
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-family: $font_custom_2;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
 
 main {
@@ -11,4 +17,52 @@ main {
 section {
     max-width: 800px;
     margin: 50px auto;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #fff;
+}
+
+h1 {
+    font-family: $font_custom_1;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: $font_custom_1;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: $font_custom_1;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    font-size: 1.5em;
+}
+
+a {
+    color: $link_color;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 991px) {
+    section {
+        max-width: unset;
+        margin: 0;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font: 1.8em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
 }
