@@ -10,11 +10,6 @@ Web tool that allows users to run Natural Language Processing (NLP) on entered t
 * [Meaningcloud API](https://www.meaningcloud.com/) - Used to run NLP on text
 * JS / HTML / CSS
 
-
-## Contributing
-
-Since this project was just build for practice, no contribution is needed.
-
 ## Authors
 
 * *Stefan Feldner*
